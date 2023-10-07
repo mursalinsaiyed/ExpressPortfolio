@@ -1,0 +1,86 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  padding: 10px 0;
+}
+
+.brand {
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+main {
+  padding: 50px 0;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+h1 span {
+  color: #007bff;
+}
+
+h2 {
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.social-media {
+  display: inline-flex;
+  gap: 10px;  /* Spacing between icons */
+}
+
+.icon-link {
+  font-size: 32px;  /* Adjust size as needed */
+  color: #333;
+  transition: opacity 0.3s;  /* Smooth fade effect on hover */
+  text-decoration: none;
+}
+
+.icon-link:hover {
+  opacity: 0.7;
+}
