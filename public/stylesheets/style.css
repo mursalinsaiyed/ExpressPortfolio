@@ -35,6 +35,15 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #333;
+  font-size: 18px; /* Increased font size */
+  padding: 5px 10px; /* Added padding for better hover effect */
+  border-radius: 5px; /* Rounded corners for the hover effect */
+  transition: all 0.3s ease; /* Smooth transition effect for hover states */
+}
+
+nav ul li a:hover {
+  background-color: #e5e5e5; /* Light gray background color on hover */
+  color: #007bff; /* Blue color on hover for navigation links */
 }
 
 main {
@@ -62,6 +71,11 @@ h2 {
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
+  transition: background-color 0.3s ease; /* Smooth background color transition for button */
+}
+
+.contact-btn:hover {
+  background-color: #0056b3; /* Darker shade for the button hover */
 }
 
 footer {
@@ -83,4 +97,24 @@ footer {
 
 .icon-link:hover {
   opacity: 0.7;
+}
+
+.profile-picture {
+  width: 500px; 
+  height: auto;
+  border-radius: 50%; 
+  margin: 20px auto; 
+  display: block; /* aligns the image to the center */
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.profile-picture:hover {
+  transform: scale(1.05); /* Zooms the image a bit */
+}
+
+.logo {
+  width: 50px; /* Adjust as per your logo's dimensions */
+  height: auto;
+  margin-right: 20px; /* Space between the logo and the brand text */
+  vertical-align: middle; /* This will vertically center the logo in line with the brand text */
 }
