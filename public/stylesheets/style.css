@@ -35,15 +35,15 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #333;
-  font-size: 18px; /* Increased font size */
-  padding: 5px 10px; /* Added padding for better hover effect */
-  border-radius: 5px; /* Rounded corners for the hover effect */
-  transition: all 0.3s ease; /* Smooth transition effect for hover states */
+  font-size: 18px; 
+  padding: 5px 10px;
+  border-radius: 5px; 
+  transition: all 0.3s ease; 
 }
 
 nav ul li a:hover {
-  background-color: #e5e5e5; /* Light gray background color on hover */
-  color: #007bff; /* Blue color on hover for navigation links */
+  background-color: #e5e5e5;
+  color: #007bff; 
 }
 
 main {
@@ -71,11 +71,11 @@ h2 {
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  transition: background-color 0.3s ease; /* Smooth background color transition for button */
+  transition: background-color 0.3s ease;
 }
 
 .contact-btn:hover {
-  background-color: #0056b3; /* Darker shade for the button hover */
+  background-color: #0056b3;
 }
 
 footer {
@@ -85,13 +85,13 @@ footer {
 
 .social-media {
   display: inline-flex;
-  gap: 10px;  /* Spacing between icons */
+  gap: 10px;
 }
 
 .icon-link {
-  font-size: 32px;  /* Adjust size as needed */
+  font-size: 32px;
   color: #333;
-  transition: opacity 0.3s;  /* Smooth fade effect on hover */
+  transition: opacity 0.3s;
   text-decoration: none;
 }
 
@@ -100,21 +100,81 @@ footer {
 }
 
 .profile-picture {
-  width: 500px; 
+  width: 500px;
   height: auto;
-  border-radius: 50%; 
-  margin: 20px auto; 
-  display: block; /* aligns the image to the center */
-  transition: transform 0.3s ease; /* Smooth zoom effect */
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
 .profile-picture:hover {
-  transform: scale(1.05); /* Zooms the image a bit */
+  transform: scale(1.05);
 }
 
 .logo {
-  width: 50px; /* Adjust as per your logo's dimensions */
+  width: 50px;
   height: auto;
-  margin-right: 20px; /* Space between the logo and the brand text */
-  vertical-align: middle; /* This will vertically center the logo in line with the brand text */
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.service-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.service-item {
+  box-sizing: border-box;
+  padding: 30px;
+  text-align: center;
+  display: block;
+  width: 50%;
+  float: left;
+}
+
+.service-item:nth-child(odd) {
+  clear: both;
+}
+
+.service-img {
+  max-width: 90%;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.service-item {
+  position: relative;
+}
+
+.service-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.service-item:hover .service-description {
+  opacity: 1;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
