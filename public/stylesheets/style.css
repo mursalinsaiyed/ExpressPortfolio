@@ -35,7 +35,6 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #333;
-<<<<<<< HEAD
   font-size: 18px; 
   padding: 5px 10px;
   border-radius: 5px; 
@@ -45,17 +44,6 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #e5e5e5;
   color: #007bff; 
-=======
-  font-size: 18px; /* Increased font size */
-  padding: 5px 10px; /* Added padding for better hover effect */
-  border-radius: 5px; /* Rounded corners for the hover effect */
-  transition: all 0.3s ease; /* Smooth transition effect for hover states */
-}
-
-nav ul li a:hover {
-  background-color: #e5e5e5; /* Light gray background color on hover */
-  color: #007bff; /* Blue color on hover for navigation links */
->>>>>>> main
 }
 
 main {
@@ -83,19 +71,11 @@ h2 {
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-<<<<<<< HEAD
   transition: background-color 0.3s ease;
 }
 
 .contact-btn:hover {
   background-color: #0056b3;
-=======
-  transition: background-color 0.3s ease; /* Smooth background color transition for button */
-}
-
-.contact-btn:hover {
-  background-color: #0056b3; /* Darker shade for the button hover */
->>>>>>> main
 }
 
 footer {
@@ -122,7 +102,6 @@ footer {
 .profile-picture {
   width: 500px;
   height: auto;
-<<<<<<< HEAD
   border-radius: 50%;
   margin: 20px auto;
   display: block;
@@ -199,21 +178,94 @@ footer {
   display: table;
   clear: both;
 }
-=======
-  border-radius: 50%; 
-  margin: 20px auto; 
-  display: block; /* aligns the image to the center */
-  transition: transform 0.3s ease; /* Smooth zoom effect */
+
+
+.projects-container {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.profile-picture:hover {
-  transform: scale(1.05); /* Zooms the image a bit */
+.project-item {
+  position: relative;
+  margin-bottom: 50px;
+  overflow: hidden;
 }
 
-.logo {
-  width: 50px; /* Adjust as per your logo's dimensions */
-  height: auto;
-  margin-right: 20px; /* Space between the logo and the brand text */
-  vertical-align: middle; /* This will vertically center the logo in line with the brand text */
+.project-image {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
 }
->>>>>>> main
+
+.project-item:hover .project-image {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.project-description {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  border-radius: 5px;
+  transition: opacity 0.3s ease;
+}
+
+.project-item:hover .project-description {
+  opacity: 1;
+}
+
+.contact-panel {
+  background-color: #e5e5e5;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
