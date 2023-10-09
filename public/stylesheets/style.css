@@ -35,6 +35,15 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #333;
+  font-size: 18px; 
+  padding: 5px 10px;
+  border-radius: 5px; 
+  transition: all 0.3s ease; 
+}
+
+nav ul li a:hover {
+  background-color: #e5e5e5;
+  color: #007bff; 
 }
 
 main {
@@ -62,6 +71,11 @@ h2 {
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #0056b3;
 }
 
 footer {
@@ -71,13 +85,13 @@ footer {
 
 .social-media {
   display: inline-flex;
-  gap: 10px;  /* Spacing between icons */
+  gap: 10px;
 }
 
 .icon-link {
-  font-size: 32px;  /* Adjust size as needed */
+  font-size: 32px;
   color: #333;
-  transition: opacity 0.3s;  /* Smooth fade effect on hover */
+  transition: opacity 0.3s;
   text-decoration: none;
 }
 
@@ -86,9 +100,172 @@ footer {
 }
 
 .profile-picture {
-  width: 500px; 
+  width: 500px;
   height: auto;
-  border-radius: 50%; 
-  margin: 20px auto; 
-  display: block; /* aligns the image to the center */
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+  transition: transform 0.3s ease;
 }
+
+.profile-picture:hover {
+  transform: scale(1.05);
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.service-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.service-item {
+  box-sizing: border-box;
+  padding: 30px;
+  text-align: center;
+  display: block;
+  width: 50%;
+  float: left;
+}
+
+.service-item:nth-child(odd) {
+  clear: both;
+}
+
+.service-img {
+  max-width: 90%;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.service-item {
+  position: relative;
+}
+
+.service-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.service-item:hover .service-description {
+  opacity: 1;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.projects-container {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-item {
+  position: relative;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover .project-image {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.project-description {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  border-radius: 5px;
+  transition: opacity 0.3s ease;
+}
+
+.project-item:hover .project-description {
+  opacity: 1;
+}
+
+.contact-panel {
+  background-color: #e5e5e5;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
